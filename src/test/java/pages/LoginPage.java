@@ -11,8 +11,6 @@ public class LoginPage extends BaseSteps {
     public static String PASSWORD = "shamim96";
     public static String URL = "https://www.demoblaze.com/";
 
-
-
     @FindBy(xpath = "//*[@id=\"login2\"]")
     static WebElement BLAZE_LOGIN;
 
@@ -33,13 +31,6 @@ public class LoginPage extends BaseSteps {
 
     @FindBy(xpath = "//*[@id=\"itemc\"][2]")
     static WebElement BLAZE_MACBOOK_AIR;
-
-    @FindBy(xpath = "//*[@id=\"itemc\"][3]")
-    static WebElement BLAZE_APPLE_MONITORS;
-
-
-
-
 
     public LoginPage(){
         PageFactory.initElements(driver, this);
@@ -71,10 +62,4 @@ public class LoginPage extends BaseSteps {
         return BLAZE_PHONE_SUMSUNG.getText();
 
     }
-
-
-
-
-
-
 }
